@@ -71,7 +71,7 @@ matrix:
       compiler: linux-clang40-release
       addons:
         apt:
-          sources: ['llvm-toolchain-precise-4.0', 'ubuntu-toolchain-r-test', 'boost-latest']
+          sources: ['llvm-toolchain-trusty-4.0', 'ubuntu-toolchain-r-test', 'boost-latest']
           packages: ['clang-4.0', 'libboost1.55-all-dev', 'pandoc']
       env: COMPILER='clang++-4.0' BUILD_TYPE='Release'
 
@@ -79,7 +79,7 @@ matrix:
       compiler: linux-clang40-dev
       addons:
         apt:
-          sources: ['llvm-toolchain-precise-4.0', 'ubuntu-toolchain-r-test', 'boost-latest']
+          sources: ['llvm-toolchain-trusty-4.0', 'ubuntu-toolchain-r-test', 'boost-latest']
           packages: ['clang-4.4', 'libboost1.55-all-dev', 'pandoc']
       env: COMPILER='clang++-4.0' BUILD_TYPE='Dev'
 
@@ -88,7 +88,7 @@ matrix:
       compiler: linux-clang50-release
       addons:
         apt:
-          sources: ['llvm-toolchain-precise-5.0', 'ubuntu-toolchain-r-test', 'boost-latest']
+          sources: ['llvm-toolchain-trusty-5.0', 'ubuntu-toolchain-r-test', 'boost-latest']
           packages: ['clang-5.0', 'libboost1.55-all-dev', 'pandoc']
       env: COMPILER='clang++-5.0' BUILD_TYPE='Release'
 
@@ -96,7 +96,7 @@ matrix:
       compiler: linux-clang50-dev
       addons:
         apt:
-          sources: ['llvm-toolchain-precise-5.0', 'ubuntu-toolchain-r-test', 'boost-latest']
+          sources: ['llvm-toolchain-trusty-5.0', 'ubuntu-toolchain-r-test', 'boost-latest']
           packages: ['clang-5.0', 'libboost1.55-all-dev', 'pandoc']
       env: COMPILER='clang++-5.0' BUILD_TYPE='Dev'
 
