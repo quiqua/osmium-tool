@@ -80,7 +80,7 @@ matrix:
       addons:
         apt:
           sources: ['llvm-toolchain-trusty-4.0', 'ubuntu-toolchain-r-test', 'boost-latest']
-          packages: ['clang-4.4', 'libboost1.55-all-dev', 'pandoc']
+          packages: ['clang-4.0', 'libboost1.55-all-dev', 'pandoc']
       env: COMPILER='clang++-4.0' BUILD_TYPE='Dev'
 
 
@@ -141,7 +141,7 @@ matrix:
       addons:
         apt:
           sources: ['ubuntu-toolchain-r-test', 'boost-latest']
-          packages: ['g++-5', 'libboost1.55-all-dev', 'pandoc']
+          packages: ['g++-5', 'libboost1.55-dev', 'libboost-program-options1.55-dev', 'pandoc']
       env: COMPILER='g++-5' BUILD_TYPE='Release'
 
     - os: linux
@@ -149,7 +149,7 @@ matrix:
       addons:
         apt:
           sources: ['ubuntu-toolchain-r-test', 'boost-latest']
-          packages: ['g++-5', 'libboost1.55-all-dev', 'pandoc']
+          packages: ['g++-5', 'libboost1.55-dev', 'libboost-program-options1.55-dev', 'pandoc']
       env: COMPILER='g++-5' BUILD_TYPE='Dev'
 
 
@@ -158,7 +158,7 @@ matrix:
       addons:
         apt:
           sources: ['ubuntu-toolchain-r-test', 'boost-latest']
-          packages: ['g++-6', 'libboost1.55-all-dev', 'pandoc']
+          packages: ['g++-6', 'libboost1.55-dev', 'libboost-program-options1.55-dev', 'pandoc']
       env: COMPILER='g++-6' BUILD_TYPE='Release'
 
     - os: linux
@@ -166,7 +166,7 @@ matrix:
       addons:
         apt:
           sources: ['ubuntu-toolchain-r-test', 'boost-latest']
-          packages: ['g++-6', 'libboost1.55-all-dev', 'pandoc']
+          packages: ['g++-6', 'libboost1.55-dev', 'libboost-program-options1.55-dev', 'pandoc']
       env: COMPILER='g++-6' BUILD_TYPE='Dev'
 
 
