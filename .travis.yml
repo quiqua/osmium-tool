@@ -10,6 +10,11 @@ sudo: false
 
 dist: trusty
 
+addons:
+  apt:
+    sources: ['ubuntu-toolchain-r-test', 'boost-latest']
+    packages: ['libboost1.55-dev', 'libboost-program-options1.55-dev', 'pandoc']
+
 #-----------------------------------------------------------------------------
 
 matrix:
@@ -20,8 +25,7 @@ matrix:
       compiler: linux-clang35-release
       addons:
         apt:
-          sources: ['ubuntu-toolchain-r-test', 'boost-latest']
-          packages: ['clang-3.5', 'libboost1.55-dev', 'libboost-program-options1.55-dev', 'pandoc']
+          packages: ['clang-3.5']
       env: COMPILER='clang++-3.5' BUILD_TYPE='Release'
 
     - os: linux
